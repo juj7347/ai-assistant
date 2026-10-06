@@ -32,6 +32,13 @@ Use any model you want — [Nous Portal](https://portal.nousresearch.com), OpenR
 
 ---
 
+## Project Git access
+
+Set `GIT_ORIGIN_URL` and `GITHUB_TOKEN` in the ignored `.env` file. Run Git operations through
+`python scripts/git_env.py <git arguments>`; for example, `python scripts/git_env.py push`.
+The helper synchronizes `origin` from `.env` and supplies the token to Git over HTTPS without
+embedding credentials in the remote URL. Keep `GITHUB_TOKEN` empty for public read-only access.
+
 ## Quick Install
 
 ### Linux, macOS, WSL2
